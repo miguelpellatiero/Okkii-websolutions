@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Okk Web Solutions cria sites rápidos, responsivos e seguros com foco em performance, automações e conversão." />
+    <meta name="theme-color" content="#1E2024" />
+    <meta name="robots" content="index,follow" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+    <title>Okki · Web Solutions</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="img/logo_okki-removebg-preview.png" type="image/x-icon" />
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+
+    <div class="cookie-banner visible" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Consentimento de cookies">
+        <div class="container cookie-banner__content">
+            <p>Usamos localStorage para guardar sua preferência de consentimento. Leia nossa <a href="PRIVACY.md" target="_blank" style="text-decoration: underline; color: #D84374;">Política de Privacidade</a>.</p>
+            <div class="cookie-actions">
+                <button class="btn btn--secondary" id="rejectCookies" type="button">Recusar</button>
+                <button class="btn btn--primary" id="acceptCookies" type="button">Aceitar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cursor glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <header id="mainHeader">
+        <div class="container header-inner">
+            <a href="#" class="logo-link">
+                <div class="logo">
+                    <img src="img/logo_okki-removebg-preview.png" alt="Okki Logo" class="logo-icon" />
+                    <div class="logo-text">
+                        <span class="okk">Okki</span>
+                        <span class="web">WEB SOLUTIONS</span>
+                    </div>
+                </div>
+            </a>
+            <nav class="nav-desktop">
+                <a href="#sobre">Sobre</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#portfolio">Portfólio</a>
+                <a href="#equipe">Equipe</a>
+                <a href="#processo">Processo</a>
+                <a href="#diferenciais">Diferenciais</a>
+                <a href="#contato" class="btn-contato">Fale conosco</a>
+            </nav>
+            <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <nav class="nav-mobile" id="navMobile">
+            <a href="#sobre">Sobre</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#portfolio">Portfólio</a>
+            <a href="#equipe">Equipe</a>
+            <a href="#processo">Processo</a>
+            <a href="#diferenciais">Diferenciais</a>
+            <a href="#contato" class="btn-contato">Fale conosco</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="hero">
+        <!-- Badges flutuantes -->
+        <div class="hero-badge">⚡ Alta performance</div>
+        <div class="hero-badge">🔒 LGPD compliant</div>
+        <div class="hero-badge">📱 100% Responsivo</div>
+        <div class="hero-badge">🤖 Automações n8n</div>
+        <!-- Canvas para partículas -->
+        <canvas id="particlesCanvas"></canvas>
+        <div class="container">
+            <h1>
+                <span class="okk">Okki</span><br />
+                <span class="destaque">Soluções web que</span>
+                <span class="destaque">impulsionam seu negócio</span>
+            </h1>
+            <p>Desenvolvimento de alta performance, automação com n8n e design focado em conversão – 100% remoto para todo o Brasil.</p>
+            <a href="#contato" class="btn-hero">Vamos conversar</a>
+        </div>
+    </section>
+
+    <section id="sobre" class="container fade-in">
+        <h2 class="section-title">O que é a <span class="highlight">Okki</span></h2>
+        <div class="section-divider"></div>
+        <p class="section-sub">Especialistas em desenvolvimento web e automação de processos digitais.</p>
+        <div class="sobre-grid">
+            <div class="texto">
+                <p><strong style="color:#D84374;">Okki</strong> é uma startup focada em entregar soluções digitais de ponta, desde profissionais autônomos até grandes empresas.</p>
+                <p>Nosso modelo 100% remoto nos permite atender clientes em todo o Brasil com agilidade e qualidade, utilizando as mais modernas tecnologias do mercado.</p>
+            </div>
+            <div class="destaque">
+                <strong>100%</strong>
+                <span>Remoto</span>
+                <p style="margin-top:0.8rem; font-size:0.9rem; color:#a0a4b0;">Atendimento em todo o território nacional</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" style="border-top:1px solid rgba(255,255,255,0.03); border-bottom:1px solid rgba(255,255,255,0.03);">
+        <div class="container">
+            <h2 class="section-title">Nossos <span class="highlight">Serviços</span></h2>
+            <div class="section-divider"></div>
+            <p class="section-sub">Soluções sob medida para cada etapa do seu negócio digital.</p>
+            <div class="servicos-grid fade-in">
+                <div class="servico-card">
+                    <span class="icone">🏢</span>
+                    <h3>Sites Institucionais &amp; Portfólios</h3>
+                    <p>Design focado em posicionamento de marca e conversão.</p>
+                </div>
+                <div class="servico-card">
+                    <span class="icone">🛒</span>
+                    <h3>E‑commerce</h3>
+                    <p>Lojas virtuais completas com catálogo, pagamentos e frete integrados.</p>
+                </div>
+                <div class="servico-card">
+                    <span class="icone">🚀</span>
+                    <h3>Plataformas de Grande Porte</h3>
+                    <p>Soluções robustas para alto tráfego e integrações complexas.</p>
+                </div>
+                <div class="servico-card">
+                    <span class="icone">⚙️</span>
+                    <h3>Automações com n8n</h3>
+                    <p>Conexão entre site e ferramentas externas (WhatsApp, CRM, planilhas, e‑mail).</p>
+                </div>
+                <div class="servico-card">
+                    <span class="icone">📈</span>
+                    <h3>SEO e Performance</h3>
+                    <p>Estruturação técnica, carregamento rápido, visibilidade nas buscas e conformidade com a LGPD.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NOVA SEÇÃO: PORTFÓLIO -->
+    <section id="portfolio" class="container fade-in">
+        <h2 class="section-title">Nosso <span class="highlight">Portfólio</span></h2>
+        <div class="section-divider"></div>
+        <p class="section-sub">Alguns dos projetos que desenvolvemos com excelência.</p>
+        <div class="portfolio-grid">
+            <div class="portfolio-card">
+                <div class="portfolio-image">
+                    <div class="img-placeholder proj-1">
+                        <span style="font-size:4rem;">🛍️</span>
+                    </div>
+                    <div class="overlay"></div>
+                    <span class="tag">E‑COMMERCE</span>
+                </div>
+                <div class="portfolio-info">
+                    <h3>Loja Essenza</h3>
+                    <p>Plataforma de cosméticos naturais com checkout integrado e dashboard de vendas.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">Stripe</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">n8n</span>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <div class="portfolio-image">
+                    <div class="img-placeholder proj-2">
+                        <span style="font-size:4rem;">📋</span>
+                    </div>
+                    <div class="overlay"></div>
+                    <span class="tag">SAAS</span>
+                </div>
+                <div class="portfolio-info">
+                    <h3>GestorPro</h3>
+                    <p>Sistema de gestão de tarefas para equipes remotas com automações inteligentes.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">WebSocket</span>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <div class="portfolio-image">
+                    <div class="img-placeholder proj-3">
+                        <span style="font-size:4rem;">🏗️</span>
+                    </div>
+                    <div class="overlay"></div>
+                    <span class="tag">INSTITUCIONAL</span>
+                </div>
+                <div class="portfolio-info">
+                    <h3>Construtora Horizonte</h3>
+                    <p>Site institucional com tour virtual 3D e integração com chatbot via WhatsApp.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Vue.js</span>
+                        <span class="tech-tag">Three.js</span>
+                        <span class="tech-tag">API WhatsApp</span>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <div class="portfolio-image">
+                    <div class="img-placeholder proj-4">
+                        <span style="font-size:4rem;">🎓</span>
+                    </div>
+                    <div class="overlay"></div>
+                    <span class="tag">EDUCAÇÃO</span>
+                </div>
+                <div class="portfolio-info">
+                    <h3>Plataforma EduHub</h3>
+                    <p>Portal de cursos online com área do aluno, certificados e integração com Zoom.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Laravel</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">Zoom API</span>
+                        <span class="tech-tag">n8n</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NOVA SEÇÃO: EQUIPE -->
+    <section id="equipe" style="border-top:1px solid rgba(255,255,255,0.03); border-bottom:1px solid rgba(255,255,255,0.03);">
+        <div class="container">
+            <h2 class="section-title">Nossa <span class="highlight">Equipe</span></h2>
+            <div class="section-divider"></div>
+            <p class="section-sub">Profissionais apaixonados por tecnologia e inovação.</p>
+            <div class="equipe-grid fade-in">
+                <div class="equipe-card">
+                    <div class="equipe-avatar" style="background: linear-gradient(135deg, #832A79, #D84374);">LM</div>
+                    <h3>Lucas Mendes</h3>
+                    <p class="cargo">Full‑Stack Developer</p>
+                    <div class="skills">
+                        <span class="skill-badge">React</span>
+                        <span class="skill-badge">Node.js</span>
+                        <span class="skill-badge">TypeScript</span>
+                        <span class="skill-badge">AWS</span>
+                    </div>
+                    <a href="#" class="social-link">GitHub ↗</a>
+                </div>
+                <div class="equipe-card">
+                    <div class="equipe-avatar" style="background: linear-gradient(135deg, #D84374, #F48468);">CS</div>
+                    <h3>Carla Souza</h3>
+                    <p class="cargo">UX/UI Designer</p>
+                    <div class="skills">
+                        <span class="skill-badge">Figma</span>
+                        <span class="skill-badge">Tailwind</span>
+                        <span class="skill-badge">Prototipação</span>
+                        <span class="skill-badge">Design System</span>
+                    </div>
+                    <a href="#" class="social-link">Behance ↗</a>
+                </div>
+                <div class="equipe-card">
+                    <div class="equipe-avatar" style="background: linear-gradient(135deg, #832A79, #F48468);">RP</div>
+                    <h3>Rafael Pereira</h3>
+                    <p class="cargo">Especialista em Automação</p>
+                    <div class="skills">
+                        <span class="skill-badge">n8n</span>
+                        <span class="skill-badge">Zapier</span>
+                        <span class="skill-badge">Python</span>
+                        <span class="skill-badge">APIs REST</span>
+                    </div>
+                    <a href="#" class="social-link">LinkedIn ↗</a>
+                </div>
+                <div class="equipe-card">
+                    <div class="equipe-avatar" style="background: linear-gradient(135deg, #D84374, #832A79);">AF</div>
+                    <h3>Ana Ferreira</h3>
+                    <p class="cargo">SEO &amp; Growth</p>
+                    <div class="skills">
+                        <span class="skill-badge">SEO Técnico</span>
+                        <span class="skill-badge">Analytics</span>
+                        <span class="skill-badge">CRO</span>
+                        <span class="skill-badge">Content</span>
+                    </div>
+                    <a href="#" class="social-link">LinkedIn ↗</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="processo" class="container fade-in">
+        <h2 class="section-title">Como <span class="highlight">trabalhamos</span></h2>
+        <div class="section-divider"></div>
+        <p class="section-sub">Quatro etapas para entregar o melhor resultado.</p>
+        <div class="processo-steps">
+            <div class="step">
+                <h4>Diagnóstico</h4>
+                <p>Entendemos seu negócio e necessidades.</p>
+            </div>
+            <div class="step">
+                <h4>Planejamento</h4>
+                <p>Definimos arquitetura, telas e automações.</p>
+            </div>
+            <div class="step">
+                <h4>Desenvolvimento</h4>
+                <p>Construção sob medida com código otimizado e testes.</p>
+            </div>
+            <div class="step">
+                <h4>Lançamento</h4>
+                <p>Deploy, SEO e acompanhamento pós‑publicação.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="diferenciais" style="border-top:1px solid rgba(255,255,255,0.03); border-bottom:1px solid rgba(255,255,255,0.03);">
+        <div class="container">
+            <h2 class="section-title">Nossos <span class="highlight">Diferenciais</span></h2>
+            <div class="section-divider"></div>
+            <p class="section-sub">Por que escolher a Okk.</p>
+            <div class="diferenciais-grid fade-in">
+                <div class="diferencial">
+                    <span class="emoji">⚡</span>
+                    <h4>Código leve e rápido</h4>
+                    <p>Sem excesso de plugins, performance otimizada.</p>
+                </div>
+                <div class="diferencial">
+                    <span class="emoji">📱</span>
+                    <h4>100% Responsivo</h4>
+                    <p>Adaptado para celular, tablet e computador.</p>
+                </div>
+                <div class="diferencial">
+                    <span class="emoji">🔒</span>
+                    <h4>Segurança e LGPD</h4>
+                    <p>Boas práticas e consentimento de dados alinhado à lei.</p>
+                </div>
+                <div class="diferencial">
+                    <span class="emoji">🤝</span>
+                    <h4>Suporte contínuo</h4>
+                    <p>Atendimento e acompanhamento após o lançamento.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="container fade-in">
+        <div class="contato-box">
+            <h2>Vamos criar algo <span class="highlight">incrível</span> juntos?</h2>
+            <p>Entre em contato e descubra como podemos impulsionar seu negócio com tecnologia.</p>
+            <a href="mailto:okkiiwebsolutions@gmail.com" class="btn-contato-grande">Enviar e‑mail</a>
+            <div class="whatsapp">
+                ou chame no <a href="#">WhatsApp: (11) 99999‑9999</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Okki Web Solutions. Todos os direitos reservados.</p>
+            <div class="footer-links">
+                <a href="#sobre">Sobre</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#portfolio">Portfólio</a>
+                <a href="#equipe">Equipe</a>
+                <a href="#contato">Contato</a>
+                <a href="PRIVACY.md" target="_blank">Privacidade</a>
+                <a href="LICENSE" target="_blank">Licença</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
