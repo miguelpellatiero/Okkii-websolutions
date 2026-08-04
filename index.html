@@ -361,5 +361,30 @@
     </footer>
 
     <script src="script.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+    <script type="module">
+      import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+      createChat({
+        webhookUrl: 'https://miguelpellatiero.app.n8n.cloud/webhook/005e9ac9-d178-4aa8-91e3-0668c36f018e/chat',
+        mode: 'window',
+        showWelcomeScreen: false,
+        initialMessages: [
+          'Olá! 👋 Sou o assistente da OKKII.',
+          'Posso te contar sobre nossos serviços de desenvolvimento web e automação. Quer tirar dúvidas ou iniciar um projeto?'
+        ],
+        i18n: {
+          en: {
+            title: 'OKKII • Atendimento',
+            subtitle: 'Fale com a gente 24/7 sobre seu projeto.',
+            inputPlaceholder: 'Digite sua mensagem...',
+            getStarted: 'Nova conversa',
+            footer: '',
+            closeButtonTooltip: 'Fechar'
+          }
+        }
+      });
+    </script>
 </body>
 </html>
