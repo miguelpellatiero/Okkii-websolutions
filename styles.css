@@ -1040,11 +1040,16 @@ section[id] {
     border-radius: 50%;
     margin: 0 auto 1.2rem;
     object-fit: cover;
+    object-position: center;
     border: 3px solid rgba(216, 67, 116, 0.3);
     box-shadow: 0 8px 30px rgba(131, 42, 121, 0.3);
     position: relative;
     z-index: 1;
     transition: transform 0.4s, border-color 0.4s;
+    display: block;
+    flex-shrink: 0;
+    max-width: 100px;
+    max-height: 100px;
 }
 
 .equipe-card:hover .equipe-foto {
