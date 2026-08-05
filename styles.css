@@ -1499,6 +1499,48 @@ footer .footer-links a:hover {
     }
 }
 
+/* ----- FAIXA DE SLOGAN ANIMADA ----- */
+.slogan-banner {
+    background: linear-gradient(90deg, rgba(131, 42, 121, 0.1) 0%, rgba(216, 67, 116, 0.1) 50%, rgba(244, 132, 104, 0.1) 100%);
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    padding: 0.8rem 0;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    position: relative;
+    overflow: hidden;
+}
+
+.slogan-content {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    animation: scrollSlogan 25s linear infinite;
+    white-space: nowrap;
+}
+
+.slogan-text {
+    font-size: clamp(0.9rem, 1.8vw, 1.1rem);
+    font-weight: 500;
+    color: #fff;
+    margin: 0;
+    flex-shrink: 0;
+    background: linear-gradient(90deg, #D84374, #F48468, #D84374);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: 0px;
+}
+
+@keyframes scrollSlogan {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
 @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after {
         animation-duration: 0.01ms !important;
