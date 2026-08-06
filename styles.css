@@ -1144,6 +1144,7 @@ section[id] {
     font-weight: 300;
 }
 
+
 /* linha conectando steps */
 .step::after {
     content: '';
