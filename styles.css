@@ -564,6 +564,14 @@ header.scrolled {
     z-index: 1;
 }
 
+.hero-badge svg {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.35rem;
+    vertical-align: -0.18rem;
+    color: var(--rosa);
+}
+
 .hero-badge:nth-child(1) {
     top: 15%;
     left: 8%;
@@ -764,8 +772,11 @@ section[id] {
 }
 
 .servico-card .icone {
-    font-size: 2.8rem;
     display: block;
+    width: 2.8rem;
+    height: 2.8rem;
+    stroke: var(--rosa);
+    stroke-width: 1.65;
     margin-bottom: 0.8rem;
     position: relative;
     z-index: 1;
@@ -820,6 +831,20 @@ section[id] {
     overflow: hidden;
 }
 
+.portfolio-image__link {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio-image__asset {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
 .portfolio-image .img-placeholder {
     width: 100%;
     height: 100%;
@@ -833,6 +858,17 @@ section[id] {
 }
 
 .portfolio-card:hover .portfolio-image .img-placeholder {
+    transform: scale(1.08);
+}
+
+.portfolio-icon {
+    width: 4rem;
+    height: 4rem;
+    stroke: #fff;
+    stroke-width: 1.4;
+}
+
+.portfolio-card:hover .portfolio-image__asset {
     transform: scale(1.08);
 }
 
@@ -1076,6 +1112,13 @@ section[id] {
     font-weight: 500;
 }
 
+.contact-icon {
+    width: 0.95rem;
+    height: 0.95rem;
+    margin-right: 0.3rem;
+    vertical-align: -0.14rem;
+}
+
 .contato-link:hover {
     color: var(--rosa);
     text-decoration: underline;
@@ -1207,8 +1250,11 @@ section[id] {
 }
 
 .diferencial .emoji {
-    font-size: 2.8rem;
     display: block;
+    width: 2.8rem;
+    height: 2.8rem;
+    stroke: var(--rosa);
+    stroke-width: 1.65;
     margin-bottom: 0.5rem;
     transition: transform 0.4s;
     position: relative;
